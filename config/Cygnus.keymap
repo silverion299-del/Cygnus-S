@@ -123,8 +123,6 @@
 &trans  &trans        &trans        &trans        &trans     &trans      &trans          &trans                                                  &bt BT_CLR_ALL
             >;
         };
-    };
-};
 
         // 精密モード: 全キーtransparent。MOUSEレイヤー内の&mo 7を押している間だけ有効になり、
         // snipe-layers = <7>(Cygnus_R.overlay)でトラックボールのCPIを1/4に落とす。
