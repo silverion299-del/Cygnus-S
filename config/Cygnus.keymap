@@ -61,23 +61,23 @@
             bindings = <
 &kp Q             &kp W    &kp E                  &kp R                  &kp T                                                  &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S    &kp D                  &kp F                  &kp G        &mkp RCLK                  &kp MINUS      &kp H        &kp J  &kp K      &lt 4 L  &lt 5 UNDER
-&mt LEFT_SHIFT Z  &kp X    &kp C                  &kp V                  &kp B        &mkp LCLK                  &kp LC(SEMI)   &kp N        &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
+&mt LEFT_SHIFT Z  &kp X    &kp C                  &kp V                  &kp B        &mkp LCLK                  &kp BACKSLASH  &kp N        &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
 &mt LCTRL ESCAPE  &kp TAB  &mt LEFT_ALT LEFT_WIN  &lt 6 INTERNATIONAL_5  &lt 3 SPACE  &lt 1 INTERNATIONAL_4      &kp BACKSPACE  &lt 2 ENTER                             &mt RALT DEL
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
         };
 
-        FUNCTION {
+        SIMBOL-SHTCT {
             bindings = <
-&kp F1   &kp F2  &kp F3  &kp F4  &kp F5                        &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&kp F11  &trans  &trans  &trans  &trans   &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&kp F12  &trans  &trans  &trans  &trans   &trans      &trans   &trans                          &kp F12
+&trans     &trans     &kp LS(N7)        &kp LS(N6)    &trans                            &kp EXCLAMATION   &kp LS(N3)    &kp LS(N9)  &kp LS(N0)             &kp PIPE
+&kp LC(A)  &kp LC(S)  &kp LC(X)         &kp LC(C)     &kp LC(V)  &trans      &kp COLON  &kp DQT           &kp LS(N2)    &kp AT      &kp LEFT_BRACKET       &kp LS(N3)
+&kp LC(Z)  &trans     &kp LS(LC(SEMI))  &kp LC(SEMI)  &trans     &trans      &kp SEMI   &kp SINGLE_QUOTE  &kp QUESTION  &kp RS(AT)  &kp LS(RIGHT_BRACKET)  &kp LS(N4)
+&trans     &trans     &trans            &trans        &trans     &trans      &trans     &trans                                                             &kp LS(N5)
             >;
         };
 
-        NUM {
+        NUM-FUNC {
             bindings = <
 &kp F1   &kp F2  &kp F3  &kp F4  &kp F5                                    &kp PRINTSCREEN  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
 &kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &trans      &kp LC(PRINTSCREEN)  &kp EQUAL        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
@@ -88,10 +88,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                                 &kp EXCL           &kp LS(N3)    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp AT_SIGN   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LS(N4)
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &kp CARET         &kp TILDE2         &kp QUESTION  &kp LS(LEFT_BRACE)    &kp LS(RIGHT_BRACE)    &kp LS(N5)
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans            &trans                                                                        &kp LS(N6)
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans            &mmv MOVE_UP      &trans           &trans
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_RIGHT  &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &mmv MOVE_X(200)  &mmv MOVE_Y(200)  &trans           &trans
+&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                                                       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -126,6 +126,7 @@
 
         // 精密モード: 全キーtransparent。MOUSEレイヤー内の&mo 7を押している間だけ有効になり、
         // snipe-layers = <7>(Cygnus_R.overlay)でトラックボールのCPIを1/4に落とす。
+
         PRECISION {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
