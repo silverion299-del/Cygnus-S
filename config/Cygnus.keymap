@@ -23,6 +23,15 @@
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <20 21>;
         };
+
+        // 右手小指最下段(33)と一番右下(42)の同時押しで精密モード(PRECISION, layer7)。
+        // レイヤーに関係なくどこからでも効くようコンボにしている(MOUSEレイヤー内の単独キーだと、
+        // まだAML未発動のうちに押すと下敷きのレイヤーのキーとして解釈され、レイヤーが有効にならなかったため)。
+        precision_mode {
+            bindings = <&mo 7>;
+            key-positions = <33 42>;
+            timeout-ms = <40>;
+        };
     };
 
     macros {
@@ -101,7 +110,7 @@
             bindings = <
 &trans       &trans       &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LC(W)                         &kp LC(W)  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans       &trans
 &lt 5 SPACE  &lt 4 SPACE  &mkp LCLK        &mkp RCLK          &mkp MCLK  &mkp RCLK      &trans  &mkp MCLK  &mkp LCLK        &mkp RCLK          &lt 4 SPACE  &lt 5 SPACE
-&trans       &trans       &trans           &trans             &trans     &mkp LCLK      &trans  &trans     &mkp MB4         &mkp MB5           &trans       &mo 7
+&trans       &trans       &trans           &trans             &trans     &mkp LCLK      &trans  &trans     &mkp MB4         &mkp MB5           &trans       &trans
 &trans       &trans       &trans           &trans             &trans     &trans         &trans  &trans                                                      &trans
             >;
         };
