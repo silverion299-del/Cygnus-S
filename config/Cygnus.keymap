@@ -53,9 +53,9 @@
             tapping-term-ms = <200>;
         };
 
-        ROTATE: ROTATE {
+        rotate: rotate {
             compatible = "zmk,behavior-sensor-rotate-var";
-            label = "ROTATE";
+            label = "rotate";
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
 
@@ -74,7 +74,7 @@
 &mt LCTRL ESCAPE  &kp TAB  &mt LEFT_ALT LEFT_WIN  &lt 6 INTERNATIONAL_5  &lt 3 SPACE  &lt 1 INTERNATIONAL_4      &kp BACKSPACE  &lt 2 ENTER                             &mt RALT DEL
             >;
 
-            sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&rotate SCRL_DOWN SCRL_UP>;
         };
 
         SIMBOL-SHTCT {
