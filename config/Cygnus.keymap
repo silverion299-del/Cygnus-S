@@ -10,10 +10,10 @@
 #define NUM 6
 #define PRECISION 7
 
-&mt {
-    flavor = "balanced";
-    quick-tap-ms = <0>;
-};
+#&mt {
+#    flavor = "balanced";
+#    quick-tap-ms = <0>;
+#};
 
 / {
     combos {
@@ -44,6 +44,16 @@
     };
 
     behaviors {
+        my_mt: my_mt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MY_MOD_TAP";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>; // 必要に応じて調整してください
+            quick-tap-ms = <0>;
+            bindings = <&kp>, <&kp>;
+        };
+
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
@@ -68,10 +78,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W    &kp E                  &kp R                  &kp T                                                  &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S    &kp D                  &kp F                  &kp G        &mkp RCLK                  &kp MINUS      &kp H        &kp J  &kp K      &lt 4 L  &lt 5 UNDER
-&mt LEFT_SHIFT Z  &kp X    &kp C                  &kp V                  &kp B        &mkp LCLK                  &kp BACKSLASH  &kp N        &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
-&mt LCTRL ESCAPE  &kp TAB  &mt LEFT_ALT LEFT_WIN  &lt 6 INTERNATIONAL_5  &lt 3 SPACE  &lt 1 INTERNATIONAL_4      &kp BACKSPACE  &lt 2 ENTER                             &mt RALT DEL
+&kp Q                &kp W    &kp E                     &kp R                  &kp T                                                  &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A                &kp S    &kp D                     &kp F                  &kp G        &mkp RCLK                  &kp MINUS      &kp H        &kp J  &kp K      &lt 4 L  &lt 5 UNDER
+&my_mt LEFT_SHIFT Z  &kp X    &kp C                     &kp V                  &kp B        &mkp LCLK                  &kp BACKSLASH  &kp N        &kp M  &kp COMMA  &kp DOT  &my_mt LEFT_SHIFT SLASH
+&my_mt LCTRL ESCAPE  &kp TAB  &my_mt LEFT_ALT LEFT_WIN  &lt 6 INTERNATIONAL_5  &lt 3 SPACE  &lt 1 INTERNATIONAL_4      &kp BACKSPACE  &lt 2 ENTER                             &my_mt RALT DEL
             >;
 
             sensor-bindings = <&rotate SCRL_DOWN SCRL_UP>;
