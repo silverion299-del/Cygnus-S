@@ -11,7 +11,6 @@
 #define NUM-FUNC 6
 #define PRECISION 7
 */
-
 /*
 &mt {
     flavor = "balanced";
@@ -31,6 +30,7 @@
         // 右手小指最下段(33)と一番右下(42)の同時押しで精密モード(PRECISION, layer7)。
         // レイヤーに関係なくどこからでも効くようコンボにしている(MOUSEレイヤー内の単独キーだと、
         // まだAML未発動のうちに押すと下敷きのレイヤーのキーとして解釈され、レイヤーが有効にならなかったため)。
+
         precision_mode {
             bindings = <&mo 7>;
             key-positions = <33 42>;
@@ -82,10 +82,10 @@
 
         default_layer {
             bindings = <
-&kp Q                &kp W    &kp E                     &kp R                  &kp T                                                  &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A                &kp S    &kp D                     &kp F                  &kp G        &mkp RCLK                  &kp MINUS      &kp H        &kp J  &kp K      &lt 4 L  &lt 5 UNDER
-&my_mt LEFT_SHIFT Z  &kp X    &kp C                     &kp V                  &kp B        &mkp LCLK                  &kp BACKSLASH  &kp N        &kp M  &kp COMMA  &kp DOT  &my_mt LEFT_SHIFT SLASH
-&my_mt LCTRL ESCAPE  &kp TAB  &my_mt LEFT_ALT LEFT_WIN  &lt 6 INTERNATIONAL_5  &lt 3 SPACE  &lt 1 INTERNATIONAL_4      &kp BACKSPACE  &lt 2 ENTER                             &my_mt RALT DEL
+&kp Q                &kp W    &kp E                     &kp R       &kp T                                       &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A                &kp S    &kp D                     &kp F       &kp G        &mkp RCLK       &kp MINUS      &kp H        &kp J  &kp K      &lt 4 L  &lt 5 UNDER
+&my_mt LEFT_SHIFT Z  &kp X    &kp C                     &kp V       &kp B        &mkp LCLK       &kp INT3       &kp N        &kp M  &kp COMMA  &kp DOT  &my_mt LEFT_SHIFT SLASH
+&my_mt LCTRL ESCAPE  &kp TAB  &my_mt LEFT_ALT LEFT_WIN  &lt 6 INT5  &lt 3 SPACE  &lt 1 INT4      &kp BACKSPACE  &lt 2 ENTER                             &my_mt RALT DEL
             >;
 
             sensor-bindings = <&rotate SCRL_DOWN SCRL_UP>;
