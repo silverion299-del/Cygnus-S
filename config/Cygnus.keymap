@@ -85,7 +85,7 @@
 &kp Q                &kp W    &kp E                     &kp R       &kp T                                       &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A                &kp S    &kp D                     &kp F       &kp G        &mkp RCLK       &kp MINUS      &kp H        &kp J  &kp K      &lt 4 L  &lt 5 UNDER
 &my_mt LEFT_SHIFT Z  &kp X    &kp C                     &kp V       &kp B        &mkp LCLK       &kp INT3       &kp N        &kp M  &kp COMMA  &kp DOT  &my_mt LEFT_SHIFT SLASH
-&my_mt LCTRL ESCAPE  &kp TAB  &my_mt LEFT_ALT LEFT_WIN  &lt 6 INT5  &lt 3 SPACE  &lt 1 INT4      &kp BACKSPACE  &lt 2 ENTER                             &my_mt RALT DEL
+&my_mt LCTRL ESCAPE  &kp TAB  &my_mt LEFT_ALT LEFT_WIN  &lt 6 N0    &lt 3 SPACE  &lt 1 N0        &kp BACKSPACE  &lt 2 ENTER                             &my_mt RALT DEL
             >;
 
             sensor-bindings = <&rotate SCRL_DOWN SCRL_UP>;
