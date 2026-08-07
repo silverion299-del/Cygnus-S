@@ -10,10 +10,12 @@
 #define NUM 6
 #define PRECISION 7
 
-/&mt {
-/    flavor = "balanced";
-/    quick-tap-ms = <0>;
-/};
+/*
+&mt {
+    flavor = "balanced";
+    quick-tap-ms = <0>;
+};
+/*
 
 / {
     combos {
