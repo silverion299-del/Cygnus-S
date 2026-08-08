@@ -83,9 +83,9 @@
         default_layer {
             bindings = <
 &kp Q                &kp W    &kp E                     &kp R       &kp T                                       &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A                &kp S    &kp D                     &kp F       &kp G        &mkp RCLK       &kp MINUS      &kp H        &kp J  &kp K      &lt 4 L  &lt 5 UNDER
+&kp A                &kp S    &kp D                     &kp F       &kp G        &mkp RCLK       &kp MINUS      &kp H        &kp J  &kp K      &lt 4 L  &lt 5 LS(MINUS)
 &my_mt LEFT_SHIFT Z  &kp X    &kp C                     &kp V       &kp B        &mkp LCLK       &kp INT3       &kp N        &kp M  &kp COMMA  &kp DOT  &my_mt LEFT_SHIFT SLASH
-&my_mt LCTRL ESCAPE  &kp TAB  &my_mt LEFT_ALT LEFT_WIN  &lt 6 N0    &lt 3 SPACE  &lt 1 N0        &kp BACKSPACE  &lt 2 ENTER                             &my_mt RALT DEL
+&my_mt LCTRL ESCAPE  &kp TAB  &my_mt LEFT_ALT LEFT_WIN  &lt 6 INT5  &lt 3 SPACE  &lt 1 INT4      &kp BACKSPACE  &lt 2 ENTER                             &my_mt RALT DEL
             >;
 
             sensor-bindings = <&rotate SCRL_DOWN SCRL_UP>;
@@ -93,18 +93,18 @@
 
         SIMBOL-SHTCT {
             bindings = <
-&trans     &trans     &kp LS(N7)        &kp LS(N6)    &trans                            &kp EXCLAMATION   &kp LS(N3)    &kp LS(N9)  &kp LS(N0)             &kp PIPE
-&kp LC(A)  &kp LC(S)  &kp LC(X)         &kp LC(C)     &kp LC(V)  &trans      &kp COLON  &kp DQT           &kp LS(N2)    &kp AT      &kp LEFT_BRACKET       &kp LS(N3)
-&kp LC(Z)  &trans     &kp LS(LC(SEMI))  &kp LC(SEMI)  &trans     &trans      &kp SEMI   &kp SINGLE_QUOTE  &kp QUESTION  &kp RS(AT)  &kp LS(RIGHT_BRACKET)  &kp LS(N4)
-&trans     &trans     &trans            &trans        &trans     &trans      &trans     &trans                                                             &kp LS(N5)
+&trans     &trans     &kp LS(N7)        &kp LS(N6)    &trans                           &kp EXCLAMATION    &kp LS(N7)    &kp LS(N9)        &kp LS(N0)             &kp PIPE
+&kp LC(A)  &kp LC(S)  &kp LC(X)         &kp LC(C)     &kp LC(V)  &trans      &kp SQT   &kp LS(SQT)        &kp LS(N2)    &kp LEFT_BRACKET  &kp RIGHT_BRACKET      &kp LS(N3)
+&kp LC(Z)  &trans     &kp LS(LC(SEMI))  &kp LC(SEMI)  &trans     &trans      &kp SEMI  &kp LS(SEMICOLON)  &kp QUESTION  &kp RS(AT)        &kp LS(RIGHT_BRACKET)  &kp LS(N4)
+&trans     &trans     &trans            &trans        &trans     &trans      &trans    &trans                                                                    &kp LS(N5)
             >;
         };
 
         NUM-FUNC {
             bindings = <
 &kp F1   &kp F2  &kp F3  &kp F4  &kp F5                                    &kp PRINTSCREEN  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
-&kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &trans      &kp LC(PRINTSCREEN)  &kp EQUAL        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
-&kp F11  &trans  &trans  &trans  &trans   &trans      &kp DOT              &kp NUMBER_0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK
+&kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &trans      &kp LC(PRINTSCREEN)  &kp EQUAL        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp RS(CARET)
+&kp F11  &trans  &trans  &trans  &trans   &trans      &kp DOT              &kp NUMBER_0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LS(N8)
 &kp F12  &trans  &trans  &trans  &trans   &trans      &trans               &trans                                                     &kp SLASH
             >;
         };
