@@ -83,7 +83,7 @@
         default_layer {
             bindings = <
 &kp Q                &kp W    &kp E                     &kp R       &kp T                                       &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A                &kp S    &kp D                     &kp F       &kp G        &mkp RCLK       &kp MINUS      &kp H        &kp J  &kp K      &lt 4 L  &lt 5 LS(MINUS)
+&kp A                &kp S    &kp D                     &kp F       &kp G        &mkp RCLK       &kp MINUS      &kp H        &kp J  &kp K      &lt 4 L  &lt 5 LS(INT3)
 &my_mt LEFT_SHIFT Z  &kp X    &kp C                     &kp V       &kp B        &mkp LCLK       &kp INT3       &kp N        &kp M  &kp COMMA  &kp DOT  &my_mt LEFT_SHIFT SLASH
 &my_mt LCTRL ESCAPE  &kp TAB  &my_mt LEFT_ALT LEFT_WIN  &lt 6 INT5  &lt 3 SPACE  &lt 1 INT4      &kp BACKSPACE  &lt 2 ENTER                             &my_mt RALT DEL
             >;
@@ -93,10 +93,10 @@
 
         SIMBOL-SHTCT {
             bindings = <
-&trans     &trans     &kp LS(NUMBER_7)  &kp LS(NUMBER_6)  &trans                            &kp EXCLAMATION    &kp QUESTION  &kp LS(N8)          &kp LS(N9)             &kp RS(PIPE)
-&kp LC(A)  &kp LC(S)  &kp LC(X)         &kp LC(C)         &kp LC(V)  &trans      &kp COLON  &kp LS(SQT)        &kp AT_SIGN   &kp LS(AT_SIGN)     &kp LEFT_BRACKET       &kp LS(N3)
-&kp LC(Z)  &trans     &kp LC(LS(SEMI))  &kp LS(SEMI)      &trans     &trans      &kp SEMI   &kp LS(SEMICOLON)  &kp QUESTION  &kp LS(LEFT_BRACE)  &kp LS(RIGHT_BRACKET)  &kp LS(N4)
-&trans     &trans     &trans            &trans            &trans     &trans      &trans     &trans                                                                      &kp LS(N5)
+&trans     &trans     &kp LS(EQUAL)  &kp LS(NUMBER_6)  &trans                             &kp EXCLAMATION    &kp QUESTION   &kp LS(N8)    &kp LS(N9)           &kp PIPE
+&kp LC(A)  &kp LC(S)  &kp LC(X)      &kp LC(C)         &kp LC(V)  &trans      &kp LS(N7)  &kp LS(N2)         &kp LS(EQUAL)  &kp RBKT      &kp RBRC             &kp LS(N3)
+&kp LC(Z)  &trans     &kp LC(SQT)    &kp LC(SEMI)      &trans     &trans      &kp SEMI    &kp LS(SEMICOLON)  &kp QUESTION   &kp LS(RBKT)  &kp LS(RIGHT_BRACE)  &kp LS(N4)
+&trans     &trans     &trans         &trans            &trans     &trans      &trans      &trans                                                               &kp LS(N5)
             >;
         };
 
