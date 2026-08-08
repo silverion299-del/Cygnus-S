@@ -93,10 +93,10 @@
 
         SIMBOL-SHTCT {
             bindings = <
-&trans     &trans     &kp EQUAL      &kp LS(EQUAL)     &trans                             &kp LS(N1)  &kp LS(FSLH)   &kp LS(N8)    &kp LS(N9)    &kp 570884233
-&kp LC(A)  &kp LC(S)  &kp LC(X)      &kp LC(C)         &kp LC(V)  &trans      &kp LS(N7)  &kp LS(N2)  &kp LS(N6)     &kp RBKT      &kp NUHS      &kp LS(N3)
-&kp LC(Z)  &trans     &kp LC(SQT)    &kp LC(SEMI)      &trans     &trans      &kp SEMI    &kp SQT     &kp LBKT       &kp LS(RBKT)  &kp LS(NUHS)  &kp LS(N4)
-&trans     &trans     &trans         &trans            &trans     &trans      &trans      &trans                                                 &kp LS(N5)
+&trans     &trans     &kp EQUAL    &kp LS(EQUAL)  &trans                             &kp LS(N1)  &kp LS(FSLH)  &kp LS(N8)    &kp LS(N9)    &kp LS(BACKSLASH)
+&kp LC(A)  &kp LC(S)  &kp LC(X)    &kp LC(C)      &kp LC(V)  &trans      &kp LS(N7)  &kp LS(N2)  &kp LS(N6)    &kp RBKT      &kp NUHS      &kp LS(N3)
+&kp LC(Z)  &trans     &kp LC(SQT)  &kp LC(SEMI)   &trans     &trans      &kp SEMI    &kp SQT     &kp LBKT      &kp LS(RBKT)  &kp LS(NUHS)  &kp LS(N4)
+&trans     &trans     &trans       &trans         &trans     &trans      &trans      &trans                                                &kp LS(N5)
             >;
         };
 
