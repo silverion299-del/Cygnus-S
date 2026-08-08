@@ -93,10 +93,10 @@
 
         SIMBOL-SHTCT {
             bindings = <
-&trans     &trans     &kp LS(N7)        &kp LS(N6)    &trans                           &kp EXCLAMATION    &kp LS(N7)    &kp LS(N9)        &kp LS(N0)             &kp PIPE
-&kp LC(A)  &kp LC(S)  &kp LC(X)         &kp LC(C)     &kp LC(V)  &trans      &kp SQT   &kp LS(SQT)        &kp LS(N2)    &kp LEFT_BRACKET  &kp RIGHT_BRACKET      &kp LS(N3)
-&kp LC(Z)  &trans     &kp LS(LC(SEMI))  &kp LC(SEMI)  &trans     &trans      &kp SEMI  &kp LS(SEMICOLON)  &kp QUESTION  &kp RS(AT)        &kp LS(RIGHT_BRACKET)  &kp LS(N4)
-&trans     &trans     &trans            &trans        &trans     &trans      &trans    &trans                                                                    &kp LS(N5)
+&trans     &trans     &kp LS(NUMBER_7)  &kp LS(NUMBER_6)  &trans                           &kp EXCLAMATION    &kp LS(N7)    &kp LS(N9)        &kp LS(N0)             &kp PIPE
+&kp LC(A)  &kp LC(S)  &kp LC(X)         &kp LC(C)         &kp LC(V)  &trans      &kp SQT   &kp LS(SQT)        &kp LS(N2)    &kp LEFT_BRACKET  &kp RIGHT_BRACKET      &kp LS(N3)
+&kp LC(Z)  &trans     &kp LS(LC(SEMI))  &kp LC(SEMI)      &trans     &trans      &kp SEMI  &kp LS(SEMICOLON)  &kp QUESTION  &kp RS(AT)        &kp LS(RIGHT_BRACKET)  &kp LS(N4)
+&trans     &trans     &trans            &trans            &trans     &trans      &trans    &trans                                                                    &kp LS(N5)
             >;
         };
 
