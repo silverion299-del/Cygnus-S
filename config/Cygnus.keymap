@@ -93,18 +93,18 @@
 
         SIMBOL-SHTCT {
             bindings = <
-&trans     &trans     &kp LS(NUMBER_7)  &kp LS(NUMBER_6)  &trans                           &kp EXCLAMATION    &kp LS(N7)    &kp LS(N9)        &kp LS(N0)             &kp PIPE
-&kp LC(A)  &kp LC(S)  &kp LC(X)         &kp LC(C)         &kp LC(V)  &trans      &kp SQT   &kp LS(SQT)        &kp LS(N2)    &kp LEFT_BRACKET  &kp RIGHT_BRACKET      &kp LS(N3)
-&kp LC(Z)  &trans     &kp LS(LC(SEMI))  &kp LC(SEMI)      &trans     &trans      &kp SEMI  &kp LS(SEMICOLON)  &kp QUESTION  &kp RS(AT)        &kp LS(RIGHT_BRACKET)  &kp LS(N4)
-&trans     &trans     &trans            &trans            &trans     &trans      &trans    &trans                                                                    &kp LS(N5)
+&trans     &trans     &kp LS(NUMBER_7)  &kp LS(NUMBER_6)  &trans                            &kp EXCLAMATION    &kp QUESTION  &kp LS(N8)          &kp LS(N9)             &kp RS(PIPE)
+&kp LC(A)  &kp LC(S)  &kp LC(X)         &kp LC(C)         &kp LC(V)  &trans      &kp COLON  &kp LS(SQT)        &kp AT_SIGN   &kp LS(AT_SIGN)     &kp LEFT_BRACKET       &kp LS(N3)
+&kp LC(Z)  &trans     &kp LC(LS(SEMI))  &kp LS(SEMI)      &trans     &trans      &kp SEMI   &kp LS(SEMICOLON)  &kp QUESTION  &kp LS(LEFT_BRACE)  &kp LS(RIGHT_BRACKET)  &kp LS(N4)
+&trans     &trans     &trans            &trans            &trans     &trans      &trans     &trans                                                                      &kp LS(N5)
             >;
         };
 
         NUM-FUNC {
             bindings = <
 &kp F1   &kp F2  &kp F3  &kp F4  &kp F5                                    &kp PRINTSCREEN  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
-&kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &trans      &kp LC(PRINTSCREEN)  &kp EQUAL        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp RS(CARET)
-&kp F11  &trans  &trans  &trans  &trans   &trans      &kp DOT              &kp NUMBER_0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LS(N8)
+&kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &trans      &kp LC(PRINTSCREEN)  &kp EQUAL        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
+&kp F11  &trans  &trans  &trans  &trans   &trans      &kp DOT              &kp NUMBER_0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK
 &kp F12  &trans  &trans  &trans  &trans   &trans      &trans               &trans                                                     &kp SLASH
             >;
         };
