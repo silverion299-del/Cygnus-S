@@ -27,13 +27,13 @@
             key-positions = <20 21>;
         };
 
-        // 右手小指最下段(33)と一番右下(42)の同時押しで精密モード(PRECISION, layer7)。
+        // 同時押しで精密モード(PRECISION, layer7)。
         // レイヤーに関係なくどこからでも効くようコンボにしている(MOUSEレイヤー内の単独キーだと、
         // まだAML未発動のうちに押すと下敷きのレイヤーのキーとして解釈され、レイヤーが有効にならなかったため)。
 
         precision_mode {
             bindings = <&mo 7>;
-            key-positions = <33 42>;
+            key-positions = <22 33>;
             timeout-ms = <40>;
         };
     };
@@ -53,7 +53,7 @@
             label = "MY_MOD_TAP";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <200>; // 必要に応じて調整してください
+            tapping-term-ms = <200>; // 必要に応じて調整
             quick-tap-ms = <0>;
             bindings = <&kp>, <&kp>;
         };
