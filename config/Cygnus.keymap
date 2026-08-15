@@ -11,6 +11,7 @@
 #define NUM-FUNC 6
 #define PRECISION 7
 */
+
 &mt {
     flavor = "balanced";
     tapping-term-ms = <200>;
@@ -71,10 +72,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W    &kp E                  &kp R       &kp T                                                 &kp Y        &kp U  &kp I      &lt 4 O  &lt 5 P
-&kp A             &kp S    &kp D                  &kp F       &kp G        &mkp RCLK       &kp LS(INTERNATIONAL_3)  &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X    &kp C                  &kp V       &kp B        &mkp LCLK       &kp INT3                 &kp N        &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
-&mt LCTRL ESCAPE  &kp TAB  &mt LEFT_ALT LEFT_WIN  &lt 6 INT5  &lt 3 SPACE  &lt 1 INT4      &kp BACKSPACE            &lt 2 ENTER                             &mt RALT DEL
+&kp Q             &kp W    &kp E                  &kp R       &kp T                                                  &kp Y        &kp U  &kp I      &lt 4 O  &lt 5 P
+&kp A             &kp S    &kp D                  &kp F       &kp G        &mkp RCLK       &kp LS(NON_US_BACKSLASH)  &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X    &kp C                  &kp V       &kp B        &mkp LCLK       &kp INT3                  &kp N        &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
+&mt LCTRL ESCAPE  &kp TAB  &mt LEFT_ALT LEFT_WIN  &lt 6 INT5  &lt 3 SPACE  &lt 1 INT4      &kp BACKSPACE             &lt 2 ENTER                             &mt RALT DEL
             >;
 
             sensor-bindings = <&rotate SCRL_DOWN SCRL_UP>;
@@ -91,10 +92,10 @@
 
         NUM-FUNC {
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4  &kp F5                        &none          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_MINUS
-&kp F6  &kp F7   &kp F8   &kp F9  &kp F10  &trans      &none    &kp LS(MINUS)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(KP_PLUS)
-&trans  &kp F11  &kp F12  &none   &none    &trans      &kp DOT  &kp NUMBER_0   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LS(KP_ASTERISK)
-&trans  &trans   &trans   &trans  &trans   &trans      &trans   &trans                                                   &kp KP_SLASH
+&kp F1  &kp F2   &kp F3   &kp F4  &kp F5                        &none          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LS(ASTERISK)
+&kp F6  &kp F7   &kp F8   &kp F9  &kp F10  &trans      &none    &kp LS(MINUS)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH
+&trans  &kp F11  &kp F12  &none   &none    &trans      &kp DOT  &kp NUMBER_0   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RS(PLUS)
+&trans  &trans   &trans   &trans  &trans   &trans      &trans   &trans                                                   &kp MINUS
             >;
         };
 
