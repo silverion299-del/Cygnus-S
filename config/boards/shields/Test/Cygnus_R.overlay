@@ -69,6 +69,8 @@
 // 左手側は含めない(左手側のタップは全てAML解除でよいため)。
 // MOUSEレイヤーで実際にマウス操作として使っている右手側のキーと、精密モード(PRECISION)呼び出しキーを列挙。
 &zip_temp_layer {
+    require-prior-idle-ms = <200>; // キー入力からAMLを発動しない時間
+
     excluded-positions = <
         9 // SCROLLレイヤー呼び出し(右親指側)
         10 // MOUSEレイヤー再呼び出し(右親指側)
